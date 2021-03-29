@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+
+    <script
+      src="https://kit.fontawesome.com/4124f9b428.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nishit's Todo list</h1>
+    </header>
+    <form>
+      <input onclick="this.select();" type="text" class="todo-input" value="Enter your task"/>
+      <button class="todo-button"><i class="fas fa-plus-circle"></i></button>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list">
+       
+      </ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

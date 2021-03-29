@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(202, 8, 41, 0.856),
+    rgb(43, 62, 236)
+  );
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 1.2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.4rem;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
+}
+form button {
+  color: rgb(43, 62, 236);
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: rgb(2, 2, 2);
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  margin: 0.5rem;
+  background: rgba(0, 0, 0, 0.705);
+  color: white;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.todo li {
+  flex: 1;
+}
+.trash-btn,
+.complete-btn {
+  background-color: transparent;
+  border-style: none;
+  background: rgb(7, 7, 7);
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+.trash-btn{
+    background: rgba(255, 0, 0, 0.562);
+    border: 1px solid rgba(116, 5, 5, 0.562);
+}
+.todo-item{
+    padding:9px 12px;
+}
+form input {
+    color:rgb(0, 0, 0);
+
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+    
+}
